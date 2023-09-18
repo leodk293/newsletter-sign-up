@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link href="style.css" rel="stylesheet">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="global-container">
+
+    <div class="container">
+      <div class="suscrib">
+        <h1>Stay udapted</h1>
+        <p>Join 60,000+ product managers receiving monthly
+        udaptes on:
+        </p>
+        <div class="list">
+          <div><img src="assets/images/icon-list.svg" alt=""><span>Product discovery and building what matters</span></div>
+          <div><img src="assets/images/icon-list.svg" alt=""><span>Measuring to ensure udaptes are a success</span></div>
+          <div><img src="assets/images/icon-list.svg" alt=""><span>And much more</span></div>
+        </div>
+        <div class="form">
+          <div class="error-msg">
+            <p>Email address</p>
+            <p class="hidden">Valid email required</p>
+          </div>
+          <input type="email" id="mail" placeholder="email@company.com" required>
+        </div>
+        <button type="button">Suscribe to monthly newsletter</button>
+      </div>
+
+      <img src="assets/images/illustration-sign-up-desktop.svg" alt="">
+
+    </div>
+
+    <div class="subscribing-success">
+      <img src="assets/images/icon-list.svg" alt="">
+      <h1>Thanks for<br>subscribing</h1>
+      <p>A confirmation mail has been sent to<br><span>ash@gmail.fr.</span>
+         Please open it and click<br>the button inside to confirm subscription.
+      </p>
+
+      <button type="button">Dismiss message</button>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

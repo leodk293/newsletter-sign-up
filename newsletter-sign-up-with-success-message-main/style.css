@@ -1,0 +1,158 @@
+body{
+    background-color: rgb(46, 46, 57);
+}
+
+.global-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    background-color: #fff;
+    width: 45%;
+    overflow: hidden;
+    margin: 50px auto;
+    padding: 25px;
+    position: relative;
+    left: 250px;
+}
+
+.subscribing-success{
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 30px;
+    width: 25%;
+    height: 350px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    position: relative;
+    left: 600px;
+    
+}
+.suscrib{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+}
+
+.list span{
+    margin-left: 5px;
+}
+.list img{
+    height: 15px;
+    object-fit: cover;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+
+}
+.error-msg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.hidden{
+    color: red;
+    display: none;
+}
+
+.suscrib button{
+    outline: 0;
+    border: 1px solid rgb(23, 23, 42);
+    background-color: rgb(23, 23, 42);
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: background-image 250ms, transform 150ms;
+}
+
+.suscrib button:hover{
+    background-image: linear-gradient(90deg, rgb(247, 101, 101), orange);
+    border-color: #fff;
+}
+.suscrib button:active{
+    transform: scale(1.05);
+
+}
+input{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container > img{
+    height: 430px;
+    object-fit: cover;
+    
+}
+.error{
+    background-color: rgb(214, 85, 85, 0.5);
+    border-color: rgb(214, 85, 85, 0.5);
+}
+
+.subscribing-success h1{
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+.subscribing-success p span{
+    font-weight: bolder;
+}
+.subscribing-success button{
+    outline: 0;
+    border-radius: 1px solid #f1f1;
+    color: #000;
+    width: 350px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.subscribing-success button:hover{
+    background-image: linear-gradient(90deg, rgb(247, 101, 101), orange);
+    border-color: #fff;
+}
+.subscribing-success img{
+    width: 60px;
+    object-fit: cover;
+}
+
+.shake{
+    animation: shake 250ms;
+    animation-iteration-count: 1;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(-1px);
+    }
+    100%{
+        transform: translateX(1px);
+    }
+}
